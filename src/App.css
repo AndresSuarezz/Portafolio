@@ -1,0 +1,104 @@
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button__hire {
+  background-color: #1b2735;
+  border: 1px solid #1b2735;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100px;
+  height: 20px;
+  font-weight: bold;
+}
+.button__hire:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: #1b2735;
+}
+
+.title__message {
+  font-size: 74px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.info__message {
+  display: flex;
+  align-items: center;
+}
+
+.desc__message {
+  line-height: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.desc__message span {
+  background-color: white;
+  color: #000;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.button__seemore {
+  background-color: #1b2735;
+  border: 1px solid #1b2735;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100px;
+  font-weight: bold;
+}
+.button__seemore:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: #1b2735;
+}
+
+.moon__img {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
+}
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
