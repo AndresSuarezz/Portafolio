@@ -55,8 +55,8 @@ const Navbar = () => {
         </Links>
         <List>
           <ListItem href="/">Inicio</ListItem>
-          {/* <ListItem>Estudios</ListItem> */}
           <ListItem href="#yo">¿Quien Soy?</ListItem>
+          <ListItem href="#tecnologias">Tecnologias</ListItem>
           <ListItem href="#trabajos">Trabajos</ListItem>
           <ListItem href="#contacto">Contacto</ListItem>
         </List>

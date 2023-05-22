@@ -84,19 +84,36 @@ const Right  = styled.div`
 
 
 const Contacto = () => {
-  const [success, setSuccess] = React.useState(null);
+  //Campos del formulario
+  const [name, setName] = React.useState()
+  const [email, setEmail] = React.useState()
+  const [message, setMessage] = React.useState()
+
+  //Mensajes de salida
+  const [success, setSuccess] = React.useState();
+  const [error, setError] = React.useState(false);
 
   const ref = useRef();
   const handleSubmit = (e) => {
     e.preventDefault()
-    emailjs.sendForm('service_skr2inf', 'template_pprzqsd', ref.current, 'Bjba6TiMr6DEY56AC')
+
+    if(name && email && message) {
+      
+      emailjs.sendForm('service_skr2inf', 'template_pprzqsd', ref.current, 'Bjba6TiMr6DEY56AC')
       .then((result) => {
           console.log(result.text);
           setSuccess(true)
+          setError()
+          setName("")
+          setEmail("")
+          setMessage("")
       }, (error) => {
           console.log(error.text);
           setSuccess(false)
       });
+    }else {
+      setError("Llena todos los campos para enviar :)")
+    }
   }
 
   return (
@@ -105,11 +122,11 @@ const Contacto = () => {
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Titulo>Contactate conmigo 🐧</Titulo>
-            <Input placeholder="Nombre" name="name"/>
-            <Input placeholder="Email" name="email"/>
-            <TextArea placeholder="Deja tu mensaje:)" rows={10} name="message"/>
+            <Input placeholder="Nombre" name="name" value={name} onChange={e => setName(e.target.value)}/>
+            <Input placeholder="Email" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
+            <TextArea placeholder="Deja tu mensaje:)" rows={10} name="message" value={message} onChange={e => setMessage(e.target.value)}/>
+            {success ? <p>Gracias por tu mensaje!</p> : <p>{error}</p>}
             <Button type="submit">Enviar</Button>
-            {success && <p>Gracias por tu mensaje!</p>}
           </Form>
         </Left>
         <Right>

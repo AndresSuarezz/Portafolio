@@ -102,3 +102,16 @@ a {
   text-align: center;
   text-decoration: none;
 }
+
+.imagen__tecnologia {
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+}
+
+.titulo__tecnologia {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
