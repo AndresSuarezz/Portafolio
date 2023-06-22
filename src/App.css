@@ -32,7 +32,7 @@
 .title__message {
   font-size: 74px;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     text-align: center;
   }
 }
@@ -45,7 +45,7 @@
 .desc__message {
   line-height: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 20px;
     text-align: center;
   }
@@ -87,7 +87,7 @@
   margin: auto;
   animation: animate 2s infinite ease alternate;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 300px;
     height: 300px;
   }

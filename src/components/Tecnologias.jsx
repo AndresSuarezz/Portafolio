@@ -32,6 +32,7 @@ const TecnologiasS = styled.div`
     gap: 20px;
     justify-content: center;
     align-items: center;
+    
     @media (max-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
     }

@@ -19,7 +19,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
    width: 100%;
    align-items: center; 
    flex-direction: column;
@@ -33,7 +33,7 @@ const Left = styled.div`
   justify-content: center;
   margin-left: 40px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 20px; 
   }
 `;
@@ -55,7 +55,7 @@ const ListItem = styled.li`
   -webkit-text-stroke: 0.1px white;
   position: relative;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
    font-size: 24px;
    color: white;
    -webkit-text-stroke: 0px;

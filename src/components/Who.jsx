@@ -22,7 +22,7 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
    display: none; 
   }
 `;
@@ -34,7 +34,7 @@ const Right = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     align-items: center;
     text-align: center;
   }

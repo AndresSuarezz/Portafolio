@@ -12,7 +12,7 @@ const Section = styled.div`
   aling-items: center;
   justify-content: space-between;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     height: 200vh;
   }
 `;
@@ -23,7 +23,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 100%;
     flex-direction: column;
     aling-items: center;
@@ -39,7 +39,7 @@ const Left = styled.div`
   gap: 20px;
   margin-left: 50px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     flex: 1;
     align-items: center;
     margin-left: 0;
@@ -50,7 +50,7 @@ const Right = styled.div`
   flex: 2;
   position: relative;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     flex: 1;
     width: 100%;
   }

@@ -23,7 +23,7 @@ const Left = styled.div`
   align-items: center;
   justify-content: flex-end;
   
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     justify-content: center;
   }
 `
@@ -39,7 +39,7 @@ const Form = styled.form`
   flex-direction: column;
   gap: 25px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 430px;
   }
 `
@@ -76,7 +76,7 @@ const Button = styled.button`
 const Right  = styled.div`
   flex: 1;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `
