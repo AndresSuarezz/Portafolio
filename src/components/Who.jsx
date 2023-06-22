@@ -46,12 +46,12 @@ const Who = () => {
     <Section id="yo">
       <Container>
         <Left>
-          <Canvas camera={{fov:25, position:[5,5,5]}} >
+          {/* <Canvas camera={{fov:25, position:[5,5,5]}} >
             <OrbitControls enableZoom={false} autoRotate/>
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
             <Cube />
-          </Canvas>
+          </Canvas> */}
         </Left>
         <Right>
           <h2 className="title__message">¿Quien soy?</h2>
@@ -65,7 +65,7 @@ const Who = () => {
             la experiencia y porque se aprenden cosas nuevas.
           </p>
           <a
-            href="https://www.linkedin.com/in/andres-felipe-suarez-gonzalez-4542b6193/"
+            href="https://www.linkedin.com/in/dev-fronti/"
             className="button__seemore"
           >
             Sobre mi

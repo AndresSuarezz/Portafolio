@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const imagenes = [
-    {src: "./images/tecnologias/HTML5-LOGO.webp", alt: "HTML"},
-    {src: "./images/tecnologias/CSS-LOGO.webp", alt: "CSS"},
-    {src: "./images/tecnologias/JS-LOGO.webp", alt: "JS"},
-    {src: "./images/tecnologias/REACT-LOGO.webp", alt: "React"},
-    {src: "./images/tecnologias/BOOSTRAP-LOGO.webp", alt: "Boostrap"},
-    {src: "./images/tecnologias/JAVA-LOGO.webp", alt: "Java"},
-    {src: "./images/tecnologias/GIT-LOGO.webp", alt: "Git"},
+    {id:1,src: "./images/tecnologias/HTML5-LOGO.webp", alt: "HTML"},
+    {id:2,src: "./images/tecnologias/CSS-LOGO.webp", alt: "CSS"},
+    {id:3,src: "./images/tecnologias/JS-LOGO.webp", alt: "JS"},
+    {id:4,src: "./images/tecnologias/REACT-LOGO.webp", alt: "React"},
+    {id:5,src: "./images/tecnologias/BOOSTRAP-LOGO.webp", alt: "Boostrap"},
+    {id:6,src: "./images/tecnologias/JAVA-LOGO.webp", alt: "Java"},
+    {id:7,src: "./images/tecnologias/GIT-LOGO.webp", alt: "Git"},
 ]
 
 const Section = styled.div`
@@ -44,7 +44,7 @@ const Tecnologias = () => {
             <h2 className="titulo__tecnologia">¿Que tecnologias uso?</h2>
             <TecnologiasS>
             {imagenes.map((imagen => (
-                <img className="imagen__tecnologia" key={imagen} src={imagen.src} alt={imagen.alt}/>
+                    <img key={imagen.id} className="imagen__tecnologia" src={imagen.src} alt={imagen.alt}/>
             )))} 
             </TecnologiasS>
         </Container>

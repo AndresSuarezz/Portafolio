@@ -85,9 +85,9 @@ const Right  = styled.div`
 
 const Contacto = () => {
   //Campos del formulario
-  const [name, setName] = React.useState()
-  const [email, setEmail] = React.useState()
-  const [message, setMessage] = React.useState()
+  const [name, setName] = React.useState("")
+  const [email, setEmail] = React.useState("")
+  const [message, setMessage] = React.useState("")
 
   //Mensajes de salida
   const [success, setSuccess] = React.useState();

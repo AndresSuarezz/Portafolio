@@ -107,7 +107,7 @@ const Trabajos = () => {
         </Left>
         <Right>
           
-          {work === "CHatGPT4Friends" ? (<ChatGpt4Friends />) : (console.log("No hay mas nada nada"))}
+          {/* {work === "CHatGPT4Friends" ? (<ChatGpt4Friends />) : (console.log("No hay mas nada nada"))} */}
         </Right>
       </Container>
     </Section>

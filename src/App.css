@@ -31,8 +31,10 @@
 
 .title__message {
   font-size: 74px;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .title__message {
     text-align: center;
   }
 }
@@ -44,8 +46,10 @@
 
 .desc__message {
   line-height: 20px;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .desc__message {
     padding: 20px;
     text-align: center;
   }
@@ -86,12 +90,15 @@
   right: 0;
   margin: auto;
   animation: animate 2s infinite ease alternate;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .moon__img {
     width: 300px;
     height: 300px;
   }
 }
+
 @keyframes animate {
   to {
     transform: translateY(20px);

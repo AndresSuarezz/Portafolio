@@ -79,7 +79,7 @@ const Hero = () => {
           </a>
         </Left>
         <Right>
-          <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
+          {/* <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={2} />
             <directionalLight position={[3, 2, 1]} />
@@ -91,7 +91,7 @@ const Hero = () => {
                 speed={2}
               />
             </Sphere>
-          </Canvas>
+          </Canvas> */}
           <img className="moon__img" src="../images/moon.png" alt="moon hero" />
         </Right>
       </Container>
