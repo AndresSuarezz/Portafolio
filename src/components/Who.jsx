@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import Cube from "./Cube";
 
 //Sytled components
 const Section = styled.div`
@@ -20,10 +17,13 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
 
   @media (max-width: 768px) {
-   display: none; 
+    display: none;
   }
 `;
 
@@ -46,12 +46,10 @@ const Who = () => {
     <Section id="yo">
       <Container>
         <Left>
-          {/* <Canvas camera={{fov:25, position:[5,5,5]}} >
-            <OrbitControls enableZoom={false} autoRotate/>
-            <ambientLight intensity={1} />
-            <directionalLight position={[3, 2, 1]} />
-            <Cube />
-          </Canvas> */}
+          {/*Imagen */}
+          <div>
+            <i className="astro fa-solid fa-user-astronaut"></i>
+          </div>
         </Left>
         <Right>
           <h2 className="title__message">¿Quien soy?</h2>

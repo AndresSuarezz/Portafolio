@@ -122,3 +122,28 @@ a {
   text-align: center;
   color: white;
 }
+
+.icon-github {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-github a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-github p {
+  font-size: 20px;
+}
+
+.icon-github svg {
+  width: 120px;
+  height: 120px;
+}
+
+.astro {
+ font-size: 10em;
+}

@@ -51,7 +51,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <p className="logo">Dev_Fronti</p>
+          <p className="logo">{"<Fronti_Dev/>"}</p>
         </Links>
         <List>
           <ListItem href="/">Inicio</ListItem>
