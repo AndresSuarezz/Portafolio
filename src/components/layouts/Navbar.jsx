@@ -54,7 +54,6 @@ const Navbar = () => {
           <p className="logo">{"<Fronti_Dev/>"}</p>
         </Links>
         <List>
-          <ListItem href="/">Inicio</ListItem>
           <ListItem href="#yo">¿Quien Soy?</ListItem>
           <ListItem href="#tecnologias">Tecnologias</ListItem>
           <ListItem href="#trabajos">Trabajos</ListItem>

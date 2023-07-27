@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { useState } from "react";
 
 const DataTrabajos = [
-  "CHatGPT4Friends",
-  "TODOApp",
-  "SeguimientoVeterinaria",
-  "Pokeapi",
+  {trabajo: "CHatGPT4Friends", url:"https://github.com/AndresSuarezz/chatGPT4Friends"},
+  {trabajo: "TODOApp", url:"https://fronti-todo-app.netlify.app/"},
+  {trabajo: "SeguimientoVeterinaria", url:"https://veterinaria-mascotas.netlify.app/"},
+  {trabajo: "Pokeapi", url: "https://pokeapi-fronti.netlify.app/"},
 ];
 
 //Sytled components
@@ -54,7 +54,6 @@ const ListItem = styled.li`
   font-weight: bold;
   cursor: pointer;
   color: transparent;
-  -webkit-text-stroke: 0.3px white;
   position: relative;
 
   @media (max-width: 768px) {
@@ -103,8 +102,8 @@ const Trabajos = () => {
         <Left>
           <List>
             {DataTrabajos.map((item) => (
-              <ListItem key={item} text={item} onClick={() => setWork(item)}>
-                {item}
+              <ListItem key={item} text={item.trabajo} onClick={() => setWork(item.trabajo)}>
+                <a className="a-trabajos" href={item.url}>{item.trabajo}</a>
               </ListItem>
             ))}
           </List>

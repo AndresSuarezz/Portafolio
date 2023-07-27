@@ -147,3 +147,9 @@ a {
 .astro {
  font-size: 10em;
 }
+
+.a-trabajos {
+  text-decoration: none;
+  color:transparent;
+  -webkit-text-stroke: 0.3px white;
+}

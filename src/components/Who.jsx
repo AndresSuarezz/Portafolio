@@ -59,7 +59,7 @@ const Who = () => {
             Soy Andres Suarez un joven Colombiano de Monteria, al que le gusta
             programar sus ideas, fascinado por aprender cosas nuevas, me
             desempeño como desarrollador FrontEnd y me siento muy comodo aqui,
-            tambien se algunas cosas de backend, me gustra tabajar en equipo por
+            tambien se algunas cosas de backend, me gusta tabajar en equipo por
             la experiencia y porque se aprenden cosas nuevas.
           </p>
           <a
