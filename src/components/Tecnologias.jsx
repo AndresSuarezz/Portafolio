@@ -12,14 +12,12 @@ const imagenes = [
 
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
   display: flex;
 `;
 
 const Container = styled.div`
     width: 100%;
     display: flex;
-    aling-items: center;
     justify-content: center;
     gap: 20px;
     flex-direction: column;

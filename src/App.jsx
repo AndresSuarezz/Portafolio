@@ -4,22 +4,17 @@ import Trabajos from "./components/Trabajos";
 import Contacto from "./components/Contacto";
 import Tecnologias from "./components/Tecnologias";
 import styled from "styled-components";
-
-import "./App.css"
+import "./App.css";
 
 //Sytled components
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  overflow-y: auto;
-  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
   color: white;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-`
+`;
 //End Styled components
 
 function App() {

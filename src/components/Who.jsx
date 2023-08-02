@@ -3,14 +3,12 @@ import styled from "styled-components";
 //Sytled components
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
   display: flex;
   justify-content: center;
 `;
 
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
   width: 100%;
   display: flex;
   justify-content: space-between;

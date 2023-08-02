@@ -1,0 +1,16 @@
+.botonIr {
+  background-color: #1b2735;
+  border: 1px solid #1b2735;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+.botonIr:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: #1b2735;
+  text-decoration: none;
+}

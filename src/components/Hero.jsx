@@ -1,13 +1,10 @@
 import styled from "styled-components";
-import Navbar from "./layouts/Navbar";
 
 //Sytled components
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
   display: flex;
   flex-direction: column;
-  aling-items: center;
   justify-content: space-between;
 
   @media (max-width: 768px) {
@@ -58,7 +55,7 @@ const Right = styled.div`
 const Hero = () => {
   return (
     <Section>
-      <Navbar />
+      {/* <Navbar /> */}
       <Container>
         <Left>
           <h1 className="title__message">Pienso, hago, soluciono</h1>

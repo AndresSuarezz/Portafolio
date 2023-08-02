@@ -6,7 +6,6 @@ import emailjs from '@emailjs/browser';
 //Sytled components
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
 `
 
 const Container = styled.div`

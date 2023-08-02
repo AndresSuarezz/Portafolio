@@ -1,10 +1,11 @@
+import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
 
 //Sytled components
 const Section = styled.nav`
   display: flex;
   justify-content: center;
-  
+
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -14,7 +15,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
-  aling-items: center;
+  /* align-items: center; */
   padding: 10px 0;
 
   @media (max-width: 768px) {
@@ -26,7 +27,7 @@ const Container = styled.div`
 
 const Links = styled.div`
   display: flex;
-  aling-items: center;
+  align-items: center;
   gap: 20px;
 `;
 
@@ -41,27 +42,33 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.a`
-    color: white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 `;
 //End Styled components
 
 const Navbar = () => {
   return (
-    <Section>
-      <Container>
-        <Links>
-          <p className="logo">{"<Fronti_Dev/>"}</p>
-        </Links>
-        <List>
-          <ListItem href="#yo">¿Quien Soy?</ListItem>
-          <ListItem href="#tecnologias">Tecnologias</ListItem>
-          <ListItem href="#trabajos">Trabajos</ListItem>
-          <ListItem href="#contacto">Contacto</ListItem>
-        </List>
-        <a href="#contacto" className="button__hire">Contratar!</a>
-      </Container>
-    </Section>
+    <>
+      <Section>
+        <Container>
+          <Links>
+            <p className="logo">{"<Fronti_Dev/>"}</p>
+          </Links>
+          <List>
+            <Link to={"/"}>Inicio</Link>
+            <ListItem href="#yo">¿Quien Soy?</ListItem>
+            <ListItem href="#tecnologias">Tecnologias</ListItem>
+            <Link to="/trabajos">Trabajos</Link>
+            <ListItem href="#contacto">Contacto</ListItem>
+          </List>
+          <a href="#contacto" className="button__hire">
+            Contratar!
+          </a>
+        </Container>
+      </Section>
+      <Outlet />
+    </>
   );
 };
 

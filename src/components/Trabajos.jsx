@@ -11,7 +11,6 @@ const DataTrabajos = [
 //Sytled components
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
   display: flex;
   justify-content: center;
 `;
@@ -31,7 +30,7 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
   display: flex;
-  aling-items: center;
+  align-items: center;
   justify-content: center;
   margin-left: 0 auto;
 
@@ -70,7 +69,7 @@ const ListItem = styled.li`
     color: white;
     width: 0px;
     overflow: hidden;
-    whitespace: nowrap;
+    white-space: nowrap;
   }
 
   &:hover {
@@ -89,7 +88,7 @@ const Right = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
-  aling-items: center;
+  align-items: center;
 `;
 //End Styled components
 
