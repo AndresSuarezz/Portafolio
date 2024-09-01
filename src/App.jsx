@@ -5,6 +5,7 @@ import Contacto from "./components/Contacto";
 import Tecnologias from "./components/Tecnologias";
 import styled from "styled-components";
 import "./App.css";
+import Works from "./pages/Works";
 
 //Sytled components
 const Container = styled.div`
@@ -21,6 +22,7 @@ function App() {
   return (
     <Container>
       <Hero />
+      <Works/>
       <Who />
       <Tecnologias />
       <Trabajos />

@@ -55,7 +55,6 @@ const Right = styled.div`
 const Hero = () => {
   return (
     <Section>
-      {/* <Navbar /> */}
       <Container>
         <Left>
           <h1 className="title__message">Pienso, hago, soluciono</h1>

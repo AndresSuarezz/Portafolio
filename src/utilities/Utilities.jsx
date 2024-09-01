@@ -4,10 +4,19 @@ import ImagenPacientes from "/images/works/Pacientes.webp";
 import ImagenPokeapi from "/images/works/Pokeapi.webp";
 import ImagenToDo from "/images/works/toDo.webp";
 import ImagenPortafolio from "/images/works/Portafolio.webp"
+import ImagenLambda from "/images/works/Lambda.webp"
 
-import {html, css, tailwind, react, vite, javaScript, styledComponents, typeScript} from "./Constans"
+import {html, css, tailwind, react, vite, javaScript, styledComponents, typeScript, firebase, mantine} from "./Constans"
 
 export const cartas = [
+  {
+    id: "addqwdID",
+    img: ImagenLambda,
+    titulo: "Lambda ⭐",
+    desc: "Plataforma educativa que conecta a estudiantes con tutores globales para mejorar sus habilidades.",
+    tecnologias: [html, css, react, firebase, vite, mantine],
+    url: "https://lambdaz.netlify.app/",
+  },
   {
     id: "adqwdaddawdaa",
     img: ImagenCripto,

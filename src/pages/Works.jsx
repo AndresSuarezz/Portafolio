@@ -91,8 +91,8 @@ const Tecnologias = styled.div`
 
 const Works = () => {
   return (
-    <Section>
-      <Titulo>Aqui puedes ver todos mis trabajos :3</Titulo>
+    <Section id="trabajos">
+      <Titulo>Estos son algunos de mis Proyectos ⭐</Titulo>
       <Cards>
         {/* Carta */}
         {cartas.map((carta) => (

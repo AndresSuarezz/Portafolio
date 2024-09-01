@@ -15,7 +15,6 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   padding: 10px 0;
 
   @media (max-width: 768px) {
@@ -59,11 +58,10 @@ const Navbar = () => {
             <Link to={"/"}>Inicio</Link>
             <ListItem href="#yo">¿Quien Soy?</ListItem>
             <ListItem href="#tecnologias">Tecnologias</ListItem>
-            <Link to="/trabajos">Trabajos</Link>
-            <ListItem href="#contacto">Contacto</ListItem>
+            <ListItem href="#trabajos">Trabajos</ListItem>
           </List>
           <a href="#contacto" className="button__hire">
-            Contratar!
+            Contactar!
           </a>
         </Container>
       </Section>

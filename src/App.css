@@ -49,6 +49,7 @@
 
 .desc__message {
   line-height: 20px;
+  padding-right: 40px;
 }
 
 @media (max-width: 768px) {

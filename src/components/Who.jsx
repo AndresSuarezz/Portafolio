@@ -54,11 +54,7 @@ const Who = () => {
           <h2 className="info__message">Responsable - Amigable - Humilde</h2>
           {/* Descripcion */}
           <p className="desc__message">
-            Soy Andres Suarez un joven Colombiano de Monteria, al que le gusta
-            programar sus ideas, fascinado por aprender cosas nuevas, me
-            desempeño como desarrollador FrontEnd y me siento muy comodo aqui,
-            tambien se algunas cosas de backend, me gusta tabajar en equipo por
-            la experiencia y porque se aprenden cosas nuevas.
+          Soy Andrés Suárez, un apasionado desarrollador FrontEnd de Montería, Colombia. Me encanta convertir ideas en código y disfruto aprender cosas nuevas. Me gusta trabajar en equipo por las experiencias compartidas y la oportunidad de aprender y crecer juntos.
           </p>
           <a
             href="https://www.linkedin.com/in/dev-fronti/"

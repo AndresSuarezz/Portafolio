@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './components/layouts/Navbar.jsx'
-import Works from './pages/Works.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
         index:true,
         element: <App/>
       }, {
-        path: "/trabajos",
-        element: <Works />
+        path: "/*",
+        element: <NotFound/>
       }
     ]
   }
